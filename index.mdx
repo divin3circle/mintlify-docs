@@ -1,133 +1,37 @@
 ---
-title: "Introduction"
-description: "Welcome to the new home for your documentation"
-icon: 'star'
+title: "xpesa Docs"
+description: "Get paid for content in dollars and withdraw to M-Pesa."
+icon: "house"
 ---
 
-## Setting up
+import { creatorStartUrl } from '/snippets/config.mdx';
 
-Get your documentation site up and running in minutes.
+xpesa lets African creators get paid for their content in dollars, withdrawn to M-Pesa.
 
-<Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
-  horizontal
->
-  Follow our three step quickstart guide.
-</Card>
-
-## Make it yours
-
-Design a docs site that looks great and empowers your users.
-
-<Columns cols={2}>
-  <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
-  >
-    Edit your docs locally and preview them in real time.
+<CardGroup cols={2}>
+  <Card title="Start as a Creator" icon="rocket" href={creatorStartUrl}>
+    Join the creator waitlist and start setting up your first paid link.
   </Card>
-  <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
-  >
-    Customize the design and colors of your site to match your brand.
+  <Card title="How it Works" icon="circle-play" href="/getting-started/how-xpesa-works">
+    See the flow from shared link to fan payment to M-Pesa withdrawal.
   </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
-  </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
-  </Card>
-</Columns>
+</CardGroup>
 
-## Create beautiful pages
+<CardGroup cols={3}>
+  <Card title="Gate Links" icon="link" href="/creators/creating-a-gate-link">
+    Sell access to URLs like Google Drive, Notion, Zoom, or private communities.
+  </Card>
+  <Card title="File Packs" icon="folder-open" href="/creators/creating-a-file-pack">
+    Bundle a small set of files behind one payment page.
+  </Card>
+  <Card title="Tips" icon="heart" href="/creators/setting-up-a-tip-link">
+    Let fans support your work with a suggested amount or pay-what-you-want.
+  </Card>
+</CardGroup>
 
-Everything you need to create world-class documentation.
-
-<Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
-  </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
-  </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
-  </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
-</Columns>
-
-## Make your content agent ready
-
-Make your docs work for humans and AI agents alike.
-
-<Columns cols={2}>
-  <Card
-    title="Prompt component"
-    icon="robot"
-    href="/agent-ready/prompt"
-  >
-    Embed shareable AI prompts readers can copy or open in Cursor.
-  </Card>
-  <Card
-    title="Visibility"
-    icon="eye"
-    href="/agent-ready/visibility"
-  >
-    Show different content to humans and agents reading your docs.
-  </Card>
-  <Card
-    title="Contextual menu"
-    icon="bolt"
-    href="/agent-ready/contextual"
-  >
-    Give readers one-click access to Claude, ChatGPT, Cursor, and more.
-  </Card>
-  <Card
-    title="AI coding tools"
-    icon="wand-magic-sparkles"
-    href="/ai-tools/claude-code"
-  >
-    Set up Claude Code, Cursor, or Windsurf with Mintlify's skill.
-  </Card>
-</Columns>
-
-## Need inspiration?
-
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
+<CardGroup cols={4}>
+  <Card title="Creator Quickstart" icon="user-pen" href="/creators/creating-your-account" />
+  <Card title="Fan Guide" icon="wallet" href="/fans/how-to-pay" />
+  <Card title="How Payments Work" icon="coins" href="/payments/overview" />
+  <Card title="Glossary" icon="book-open" href="/reference/web3-glossary" />
+</CardGroup>
