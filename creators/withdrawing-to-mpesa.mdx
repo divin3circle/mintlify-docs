@@ -1,10 +1,10 @@
 ---
-title: "Withdrawing to M-Pesa"
+title: "Withdrawing to Fiat"
 description: "Move creator earnings from USDC to M-Pesa."
-icon: "smartphone"
+icon: "mobile"
 ---
 
-import { minimumWithdrawal, withdrawalTimeline } from '/snippets/config.mdx';
+import { minimumWithdrawal, withdrawalTimeline } from "/snippets/config.mdx";
 
 <img src="/images/withdraw.webp" alt="M-Pesa withdrawal illustration" />
 
@@ -15,7 +15,8 @@ Creators can withdraw available USDC earnings to an M-Pesa number in supported m
     Go to your dashboard wallet area and choose withdraw.
   </Step>
   <Step title="Enter the amount">
-    Enter the USDC amount you want to withdraw. The current minimum is {minimumWithdrawal}.
+    Enter the USDC amount you want to withdraw. The current minimum is{" "}
+    {minimumWithdrawal}.
   </Step>
   <Step title="Add the M-Pesa number">
     Enter the M-Pesa number that should receive the payout.
@@ -32,6 +33,4 @@ Creators can withdraw available USDC earnings to an M-Pesa number in supported m
 
 Kotani Pay is the offramp partner that helps convert USDC into local mobile money payouts. You may see their name during the withdrawal flow or in payout references.
 
-<Note>
-  Withdrawals are {withdrawalTimeline}.
-</Note>
+<Note>Withdrawals are {withdrawalTimeline}.</Note>
