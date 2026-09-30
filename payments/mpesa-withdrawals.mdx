@@ -4,13 +4,15 @@ description: "How USDC becomes KES in an M-Pesa wallet."
 icon: "mobile"
 ---
 
+import { minimumWithdrawal, withdrawalTimeline } from "/snippets/config.mdx";
+
 <img src="/images/mpesa.png" alt="M-Pesa logo" height={50} width={50} />
 
-When a creator withdraws, USDC is converted into local currency and sent to the creator's fiat account(bank or mobile) through an offramp partner.
+When a creator withdraws, USDC is converted into local currency and sent to the creator's mobile money account through an offramp partner.
 
-## Kotani Pay
+## Pretium
 
-Kotani Pay helps handle the conversion from USDC to mobile money. You may see their name in the withdrawal flow.
+Pretium handles the conversion from USDC to mobile money. You may see their name in the withdrawal flow or in payout references.
 
 ## Rate and timing
 
@@ -19,3 +21,11 @@ The KES amount depends on the rate shown when you request the withdrawal. The cu
 <Warning>
   Always confirm the M-Pesa number before submitting a withdrawal.
 </Warning>
+
+<Card
+  title="Step-by-step withdrawal guide"
+  icon="mobile"
+  href="/creators/withdrawing-to-mpesa"
+>
+  Follow the creator walkthrough for requesting a payout.
+</Card>

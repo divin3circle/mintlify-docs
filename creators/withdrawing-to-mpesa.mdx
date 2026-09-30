@@ -1,10 +1,10 @@
 ---
-title: "Withdrawing to Fiat"
+title: "Withdrawing to M-Pesa"
 description: "Move creator earnings from USDC to M-Pesa."
 icon: "mobile"
 ---
 
-import { minimumWithdrawal, withdrawalTimeline } from "/snippets/config.mdx";
+import { minimumWithdrawal } from "/snippets/config.mdx";
 
 <img src="/images/withdraw.webp" alt="M-Pesa withdrawal illustration" />
 
@@ -29,8 +29,10 @@ Creators can withdraw available USDC earnings to an M-Pesa number in supported m
   </Step>
 </Steps>
 
-## What is Kotani Pay?
-
-Kotani Pay is the offramp partner that helps convert USDC into local mobile money payouts. You may see their name during the withdrawal flow or in payout references.
-
-<Note>Withdrawals are {withdrawalTimeline}.</Note>
+<Card
+  title="How the conversion works"
+  icon="arrows-left-right"
+  href="/payments/mpesa-withdrawals"
+>
+  See the rate, the timing, and the offramp partner behind the payout.
+</Card>
